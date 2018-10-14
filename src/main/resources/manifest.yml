@@ -1,0 +1,9 @@
+applications:
+ - name: my-hackathon
+   memory: 1G
+   instances: 1
+   domain: my-hackathon.com
+   path: ./target/my-hackathon-0.0.1-SNAPSHOT
+   services:
+   routes:
+     - route: my-hackathon.com

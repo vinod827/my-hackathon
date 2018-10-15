@@ -5,11 +5,11 @@
 
 	<groupId>com.learning</groupId>
 	<artifactId>my-hackathon</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<packaging>jar</packaging>
 
 	<name>my-hackathon</name>
-	<description>Demo project for Spring Boot</description>
+	<description>My Hackathon Project</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>

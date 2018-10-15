@@ -1,9 +1,17 @@
 applications:
- - name: my-hackathon
-   memory: 1G
-   instances: 1
-   domain: my-hackathon.com
-   path: ./target/my-hackathon-0.0.1-SNAPSHOT
-   services:
-   routes:
-     - route: my-hackathon.com
+- name: my-hackathon
+  host: my-hackathon
+  memory: 1G
+  instances: 1
+  disk_quota: 1G
+  buildpack: java_buildpack
+  path: target/my-hackathon.jar
+  #services:
+    #- skill-processor-postgres
+    #- application-logs
+    #- connectivity
+    #- hybris-connector-uaa
+  #env:
+    #JAVA_OPTS: -Djava.security.egd=file:///dev/urandom -Dspring.profiles.active=cloud
+    #SAP_JWT_TRUST_ACL: '[{"clientid" : "*", "identityzone" : "*"}]'
+    #JBP_CONFIG_DEBUG: '{enabled: true}'

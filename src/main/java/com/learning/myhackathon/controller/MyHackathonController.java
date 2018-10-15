@@ -26,6 +26,14 @@ public class MyHackathonController {
 
     }
 
+    @GetMapping(value="/")
+    Mono<String> defaultPage(){
+        logger.info("Entering defaultPage@MyHackathonController");
+        return Mono.just("Welcome");
+
+    }
+
+
     @GetMapping(value = "/text/{encryptedText}")
     Mono<String> getUnencryptedText(@PathVariable("encryptedText") String encryptedText){
         logger.info("Entering getUnencryptedText@MyHackathonController");

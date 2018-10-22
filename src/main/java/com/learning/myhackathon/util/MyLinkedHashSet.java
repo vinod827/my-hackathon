@@ -27,9 +27,11 @@ public class MyLinkedHashSet {
     myHashMap.put("A", "A");
     myHashMap.put("Z", "Z");
     myHashMap.put("K", "K");
-    //myHashMap.put("K", "K");
+    myHashMap.put("K", "K");
     myHashMap.put("L", "L");
     myHashMap.put("H", "H");
+    myHashMap.put(null, null);
+    //myHashMap.put(null, null);
     logger.info(myHashMap);
 
     SortedSet<String> mySortedSet = new TreeSet <>();
@@ -40,6 +42,7 @@ public class MyLinkedHashSet {
     mySortedSet.add("V");
     mySortedSet.add("U");
     mySortedSet.add("D");
+    //mySortedSet.add(null);
     logger.info(mySortedSet);
 
   logger.info("Exiting main@MyLinkedHashSet");
